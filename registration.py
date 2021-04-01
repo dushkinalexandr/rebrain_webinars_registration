@@ -5,6 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
+#
 current_month = str.lower(datetime.datetime.now().strftime("%B"))
 current_year = str.lower(datetime.datetime.now().strftime("%Y"))
 link = f"https://rebrainme.com/webinars/devops-{current_month}-{current_year}/"
