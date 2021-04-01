@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
+import secrets
 
 # Get current month and year
 current_month = str.lower(datetime.datetime.now().strftime("%B"))
@@ -11,10 +11,10 @@ current_year = str.lower(datetime.datetime.now().strftime("%Y"))
 link = f"https://rebrainme.com/webinars/devops-{current_month}-{current_year}/"
 print(link)
 
-# User data
-user_name = "username"
-user_email = "example@example.edu"
-user_phone_number = "+79991235678"
+# User data form secrets
+user_name = secrets.USER_NAME
+user_email = secrets.USER_EMAIL
+user_phone_number = secrets.USER_PHONE_NUMBER
 
 # Open browser
 browser = webdriver.Chrome()
