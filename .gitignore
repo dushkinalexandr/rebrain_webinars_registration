@@ -109,6 +109,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+*.ini
+secrets.py
 
 # Spyder project settings
 .spyderproject
